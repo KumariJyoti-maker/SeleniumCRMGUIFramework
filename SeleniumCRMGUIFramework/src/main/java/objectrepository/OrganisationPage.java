@@ -22,7 +22,7 @@ public class OrganisationPage {
 	public WebElement getPlus() {
 		return plus;
 	}
-	@FindBy(name="accountname")
+	@FindBy(xpath="//input[@name='accountname']")
 	private WebElement orgName;
 	public WebElement getOrgName() {
 		return orgName;

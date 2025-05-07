@@ -38,7 +38,7 @@ public static void main(String[] args) throws EncryptedDocumentException, IOExce
 	//System.out.println(ranno);
 	
 		
-		String data1=ex.getDataFromXls("Sheet1", 1, 0)+jv.getRandomNum();
+		String data1=ex.getDataFromXls("Sheet1", 2, 0)+jv.getRandomNum();
 		
 	
 	WebDriver driver=null;

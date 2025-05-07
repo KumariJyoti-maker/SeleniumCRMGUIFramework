@@ -13,7 +13,7 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class ExcelUtility {
 	public String getDataFromXls(String sheetName,int rowNum,int cellNum) throws EncryptedDocumentException, IOException {
-		FileInputStream fis2= new FileInputStream("C:\\Users\\Owner\\Desktop\\Java\\SeleniumCRMGUIFramework\\configAppData\\otms test cases.xlsx");
+		FileInputStream fis2= new FileInputStream("C:\\Users\\Owner\\git\\automation_tl\\SeleniumCRMGUIFramework\\configAppData\\otms test cases.xlsx");
 		Workbook wb = WorkbookFactory.create(fis2);
 	Sheet sq= wb.getSheet(sheetName);
 	Row rw= sq.getRow(rowNum);
