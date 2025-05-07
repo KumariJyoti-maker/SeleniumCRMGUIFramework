@@ -14,7 +14,9 @@ public class WebDrIverUtility {
 	}
 	public void waitForElementPresent(WebDriver driver, WebElement element) {
 		WebDriverWait wait =new WebDriverWait(driver,Duration.ofSeconds(20));
-		wait.until(ExpectedConditions.visibilityOf(element));	
+		//wait.until(ExpectedConditions.visibilityOf(element));
+		wait.until(ExpectedConditions.elementToBeClickable(element));
+		
 	}
 public void switchWindow(WebDriver driver,String partialURL) {
 	Set<String>set=driver.getWindowHandles();

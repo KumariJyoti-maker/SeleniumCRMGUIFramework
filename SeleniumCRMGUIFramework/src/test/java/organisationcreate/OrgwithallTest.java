@@ -14,6 +14,7 @@ import genericutility.BaseClass;
 import genericutility.ExcelUtility;
 import genericutility.Fileutility;
 import genericutility.JavaUtility;
+import genericutility.WebDrIverUtility;
 import objectrepository.ContactPage;
 import objectrepository.HomePage;
 import objectrepository.LoginPage;
@@ -28,11 +29,14 @@ public class OrgwithallTest extends BaseClass {
 		String data1=ex.getDataFromXls("Sheet1", 2, 0)+jv.getRandomNum();
 		String industries =ex.getDataFromXls("Sheet1", 1, 1);
 	    String phone = ex.getDataFromXls("Sheet1", 1, 3);
+	    WebDrIverUtility wdu=new WebDrIverUtility();
 	    
 		
 		HomePage hp= new HomePage(driver);
 		hp.organisation();
+		
 		OrganisationPage op= new OrganisationPage(driver);
+		wdu.waitForElementPresent(driver, op.getOrgC());
 		op.createorgnisation(data1, industries, phone);
 		System.out.println("");
 		OrginfoPage oip= new OrginfoPage(driver);
