@@ -25,7 +25,7 @@ public class OrgwithallTest extends BaseClass {
 	@Test(groups = "smokeTest")
 	public void orgallTest() throws EncryptedDocumentException, IOException, InterruptedException {
 		
-		String data1=ex.getDataFromXls("Sheet1", 3, 0)+jv.getRandomNum();
+		String data1=ex.getDataFromXls("Sheet1", 2, 0)+jv.getRandomNum();
 		String industries =ex.getDataFromXls("Sheet1", 1, 1);
 	    String phone = ex.getDataFromXls("Sheet1", 1, 3);
 	    
