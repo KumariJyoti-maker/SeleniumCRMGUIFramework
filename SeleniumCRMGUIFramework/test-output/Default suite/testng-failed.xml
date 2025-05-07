@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="practicedatadriventestin.ReadfromXml">
+      <class name="hometest.HomePageVerTest">
         <methods>
-          <include name="readxmlTest" invocation-numbers="0"/>
+          <include name="homepageTest" invocation-numbers="0"/>
+          <include name="homepageLogoTest" invocation-numbers="0"/>
         </methods>
-      </class> <!-- practicedatadriventestin.ReadfromXml -->
+      </class> <!-- hometest.HomePageVerTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

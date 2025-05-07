@@ -29,7 +29,7 @@ import objectrepository.ContactPage;
 public class ContactwithSupportDateTest extends BaseClass {
 	@Test
 	public void contactSupportDate() throws IOException {
-		UtilityClassObject.getTest().log(Status.INFO, "actual date");
+		//UtilityClassObject.getTest().log(Status.INFO, "actual date");
 		Date dat=new Date();
 		SimpleDateFormat sdf= new SimpleDateFormat("YYYY-MM-dd");
 		String acDate=sdf.format(dat);
@@ -47,7 +47,7 @@ public class ContactwithSupportDateTest extends BaseClass {
 		cp.getEndDate().sendKeys(dateRequire);
 		cp.getSavec().click();
 		System.out.println("===contact with Date created=====");
-		UtilityClassObject.getTest().log(Status.PASS, "contact with Date created");
+		//UtilityClassObject.getTest().log(Status.PASS, "contact with Date created");
 	}
 
 }

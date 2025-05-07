@@ -45,7 +45,8 @@ public class BaseClass {
 		public void configBClass() throws IOException {
 		
 		System.out.println("===launch the browser====");
-		String BROWSER=fu.getDataFromProp("browser");
+		String BROWSER=System.getProperty("browser" , fu.getDataFromProp("browser"));
+		//String BROWSER=fu.getDataFromProp("browser");
 		//String BROWSER=browser;
 		if (BROWSER.equals("chrome")) {
 			driver=new ChromeDriver();
@@ -60,15 +61,18 @@ public class BaseClass {
 			driver= new ChromeDriver();
 		}
 		sdriver=driver;
-		UtilityClassObject.setDriver(driver);
+		//UtilityClassObject.setDriver(driver);
 	}
 	@BeforeMethod(groups = {"smokeTest", "regressionTest"})
 	public void configBM() throws IOException {
 		System.out.println("===login====");
+		String URL=System.getProperty("url" , fu.getDataFromProp("url"));
+		String USERNAME=System.getProperty("username" , fu.getDataFromProp("username"));
+		String PASSWORD=System.getProperty("password" , fu.getDataFromProp("password"));
 		
-		String URL=fu.getDataFromProp("url");
-		String USERNAME=fu.getDataFromProp("username");
-		String PASSWORD=fu.getDataFromProp("password");
+		//String URL=fu.getDataFromProp("url");
+		//String USERNAME=fu.getDataFromProp("username");
+		//String PASSWORD=fu.getDataFromProp("password");
 		
 		
 		LoginPage lp= new LoginPage(driver);
