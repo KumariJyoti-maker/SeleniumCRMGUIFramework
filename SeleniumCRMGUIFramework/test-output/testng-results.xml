@@ -1,44 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="5" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-07T15:04:49 IST" name="Suite" finished-at="2025-05-07T15:05:48 IST" duration-ms="59087">
+  <suite started-at="2025-05-08T12:58:06 IST" name="Default suite" finished-at="2025-05-08T12:59:36 IST" duration-ms="89846">
     <groups>
+      <group name="regressionTest">
+        <method signature="OrgwithallTest.contactTest()[pri:0, instance:organisationcreate.OrgwithallTest@327514f]" name="contactTest" class="organisationcreate.OrgwithallTest"/>
+      </group> <!-- regressionTest -->
       <group name="smokeTest">
-        <method signature="OrgwithallTest.orgallTest()[pri:0, instance:organisationcreate.OrgwithallTest@10683d9d]" name="orgallTest" class="organisationcreate.OrgwithallTest"/>
+        <method signature="OrgwithallTest.orgallTest()[pri:0, instance:organisationcreate.OrgwithallTest@327514f]" name="orgallTest" class="organisationcreate.OrgwithallTest"/>
       </group> <!-- smokeTest -->
     </groups>
-    <test started-at="2025-05-07T15:04:49 IST" name="Test" finished-at="2025-05-07T15:05:48 IST" duration-ms="59087">
+    <test started-at="2025-05-08T12:58:06 IST" name="Default test" finished-at="2025-05-08T12:59:36 IST" duration-ms="89846">
       <class name="organisationcreate.OrgwithallTest">
-        <test-method is-config="true" signature="configBSuit()[pri:0, instance:organisationcreate.OrgwithallTest@10683d9d]" started-at="2025-05-07T15:04:49 IST" name="configBSuit" finished-at="2025-05-07T15:04:49 IST" duration-ms="16" status="PASS">
+        <test-method is-config="true" signature="configBSuit()[pri:0, instance:organisationcreate.OrgwithallTest@327514f]" started-at="2025-05-08T12:58:06 IST" name="configBSuit" finished-at="2025-05-08T12:58:06 IST" duration-ms="20" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBSuit -->
-        <test-method is-config="true" signature="configBClass()[pri:0, instance:organisationcreate.OrgwithallTest@10683d9d]" started-at="2025-05-07T15:04:49 IST" name="configBClass" finished-at="2025-05-07T15:04:56 IST" duration-ms="7020" status="PASS">
+        <test-method is-config="true" signature="configBClass()[pri:0, instance:organisationcreate.OrgwithallTest@327514f]" started-at="2025-05-08T12:58:06 IST" name="configBClass" finished-at="2025-05-08T12:58:12 IST" duration-ms="6518" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBClass -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:organisationcreate.OrgwithallTest@10683d9d]" started-at="2025-05-07T15:04:56 IST" name="configBM" finished-at="2025-05-07T15:04:57 IST" duration-ms="1833" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:organisationcreate.OrgwithallTest@327514f]" started-at="2025-05-08T12:58:12 IST" name="configBM" finished-at="2025-05-08T12:58:18 IST" duration-ms="5630" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="orgallTest()[pri:0, instance:organisationcreate.OrgwithallTest@10683d9d]" started-at="2025-05-07T15:04:57 IST" name="orgallTest" finished-at="2025-05-07T15:05:44 IST" duration-ms="46562" status="PASS">
+        <test-method signature="contactTest()[pri:0, instance:organisationcreate.OrgwithallTest@327514f]" started-at="2025-05-08T12:58:18 IST" name="contactTest" finished-at="2025-05-08T12:58:39 IST" duration-ms="20772" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- orgallTest -->
-        <test-method is-config="true" signature="configam()[pri:0, instance:organisationcreate.OrgwithallTest@10683d9d]" started-at="2025-05-07T15:05:44 IST" name="configam" finished-at="2025-05-07T15:05:47 IST" duration-ms="3256" status="PASS">
+        </test-method> <!-- contactTest -->
+        <test-method is-config="true" signature="configam()[pri:0, instance:organisationcreate.OrgwithallTest@327514f]" started-at="2025-05-08T12:58:39 IST" name="configam" finished-at="2025-05-08T12:58:41 IST" duration-ms="2549" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configam -->
-        <test-method is-config="true" signature="configac()[pri:0, instance:organisationcreate.OrgwithallTest@10683d9d]" started-at="2025-05-07T15:05:47 IST" name="configac" finished-at="2025-05-07T15:05:48 IST" duration-ms="337" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:organisationcreate.OrgwithallTest@327514f]" started-at="2025-05-08T12:58:41 IST" name="configBM" finished-at="2025-05-08T12:58:47 IST" duration-ms="5098" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="orgallTest()[pri:0, instance:organisationcreate.OrgwithallTest@327514f]" started-at="2025-05-08T12:58:47 IST" name="orgallTest" finished-at="2025-05-08T12:59:33 IST" duration-ms="46073" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orgallTest -->
+        <test-method is-config="true" signature="configam()[pri:0, instance:organisationcreate.OrgwithallTest@327514f]" started-at="2025-05-08T12:59:33 IST" name="configam" finished-at="2025-05-08T12:59:36 IST" duration-ms="2927" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configam -->
+        <test-method is-config="true" signature="configac()[pri:0, instance:organisationcreate.OrgwithallTest@327514f]" started-at="2025-05-08T12:59:36 IST" name="configac" finished-at="2025-05-08T12:59:36 IST" duration-ms="204" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configac -->
-        <test-method is-config="true" signature="configas()[pri:0, instance:organisationcreate.OrgwithallTest@10683d9d]" started-at="2025-05-07T15:05:48 IST" name="configas" finished-at="2025-05-07T15:05:48 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="configas()[pri:0, instance:organisationcreate.OrgwithallTest@327514f]" started-at="2025-05-08T12:59:36 IST" name="configas" finished-at="2025-05-08T12:59:36 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configas -->
       </class> <!-- organisationcreate.OrgwithallTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
